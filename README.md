@@ -1,7 +1,7 @@
 # Detect visual limits of the road in foggy scene.
 
-1. Method 1: in the directory "visibility_detection_by_contrast", the contrast method is used. The code took the 4-nearest pixels to calculate the contrast value(In the paper<sub>[1]</sub>, it's said that use 2-nearest pixels can get the same effect while saving much time) -- ___if the contrast value of the pixel reaches the threshold and it's not a very isolated one, its y_axis value is perhaps the visual limit___. The paper referred is below.
-2. Method 2: in the directory "visibility_detection_by_2nd_derivative_only_road_surface", referred to paper<sub>[2]</sub>the 2nd derivative method is used as: 
+1. Method 1: in the directory "visibility_detection_by_contrast", the contrast method is used. The code took the 4-nearest pixels to calculate the contrast value(In the paper<sup>[1]</sup>, it's said that use 2-nearest pixels can get the same effect while saving much time) -- ___if the contrast value of the pixel reaches the threshold and it's not a very isolated one, its y_axis value is perhaps the visual limit___. The paper referred is below.
+2. Method 2: in the directory "visibility_detection_by_2nd_derivative_only_road_surface", referred to paper<sup>[2]</sup>the 2nd derivative method is used as: 
    1. ___Get the vector containing the mean of gray values of each line in a road scene image.___
    2. ___Calculate the 2nd derivative of the gray values, and find where the 2nd derivative equals 0, of which the y_axis value is probably the visual limit. Besides, I restricted the visual limits in the road region, to get rid of the interference of the trees or other things around.___
    3. ___However, the candidate y may exist a lot, so the code here took the result of method 1 -- select the y which is nearest to the result in method 1.___
