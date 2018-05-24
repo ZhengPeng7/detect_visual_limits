@@ -7,6 +7,13 @@
    3. ___However, the candidate y may exist a lot, so the code here took the result of method 1 -- select the y which is nearest to the result in method 1.___
    4. ___It seems that method 2 is better than method 1 here, while referred on results of method 1.___
 
+### Results:
+- method 1:
+![method_1_res](https://raw.githubusercontent.com/ZhengPeng7/detect_visual_limits/master/visibility_detection_contrast/results/1_point_05/1.jpg)
+
+- method 2:
+![method_2_res](https://raw.githubusercontent.com/ZhengPeng7/detect_visual_limits/master/visibility_detection_by_2nd_derivative_only_road_surface/results/1_point_05/1.jpg)
+
 > [Paper1](http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFD2009&filename=JSJF200911010&v=MTA5Mjl0ak5ybzlFWklSOGVYMUx1eFlTN0RoMVQzcVRyV00xRnJDVVJMS2ZaT1JuRkNua1c3eklMejdCYUxHNEg=) -- 李勃,董蓉,陈启美.无需人工标记的视频对比度道路能见度检测[J].计算机辅助设计与图形学学报,2009,21(11):1575-1582.
 >
 > [Paper2](https://www.researchgate.net/publication/220464605_Automatic_fog_detection_and_estimation_of_visibility_distance_through_use_of_an_onboard_camera) -- Hautière, Nicolas & Tarel, Jean-Philippe & Lavenant, Jean & Aubert, Didier. (2006). Automatic fog detection and estimation of visibility distance through use of an onboard camera. Mach. Vis. Appl.. 17. 8-20. 10.1007/s00138-005-0011-1. 
